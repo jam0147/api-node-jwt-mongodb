@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "4a8d81ba-bba5-40e9-9071-b61e844c28ff",
+		"name": "fazt-jwt-mongo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "/products",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"laptop lenovo\",\r\n    \"category\": \"laptops\",\r\n    \"price\": 999.99,\r\n    \"imgUrl\": \"https://static7.depositphotos.com/1001686/792/i/600/depositphotos_7920667-stock-photo-laptop-with-blank-screen-isolated.jpg\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"laptop lenovo\",\r\n    \"category\": \"laptops\",\r\n    \"price\": 999.99,\r\n    \"imgUrl\": \"https://static7.depositphotos.com/1001686/792/i/600/depositphotos_7920667-stock-photo-laptop-with-blank-screen-isolated.jpg\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": []
+		}
+	]
+}
